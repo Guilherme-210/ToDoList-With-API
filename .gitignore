@@ -1,0 +1,43 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Diretórios node_modules
+node_modules/
+
+# Diretórios de build
+dist/
+build/
+
+# Ambiente
+.env
+.env.local
+.env.*.local
+
+# Cache
+.cache/
+.vite/
+.next/
+out/
+coverage/
+temp/
+tmp/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Arquivos de backup
+*.swp
+*.swo
+*~
+
+# API simulada
+ToDoList-With-API-API/todos.json
