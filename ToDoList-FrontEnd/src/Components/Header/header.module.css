@@ -1,0 +1,51 @@
+@import "../../style/variables.css";
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+  background-color: var(--bg-header);
+  color: var(--color-white);
+  padding: var(--padding-header);
+  text-align: center;
+  box-shadow: var(--shadow-header);
+  border-bottom: 4px solid var(--bg-header-border);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: var(--font-size-title);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.themeToggleBtn {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.themeToggleBtn:hover {
+  background-color: var(--color-primary-hover);
+  transform: scale(1.05);
+}
+
+.themeToggleBtn:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 600px) {
+  .themeToggleBtn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}

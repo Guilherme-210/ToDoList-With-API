@@ -1,0 +1,82 @@
+:root {
+  /* Cores - Claro */
+  --bg-color: #4e4e4e;
+  --bg-header: #007bff;
+  --bg-header-border: #0056b3;
+  --bg-card: #f9f9f9;
+  --bg-card-completed: #e6ffe6;
+  --bg-filter-button: #eee;
+  --color-primary: #007bff;
+  --color-primary-hover: #0056b3;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray: #ccc;
+  --color-gray-dark: #888;
+  --color-text: #333;
+  --color-muted: #555;
+  --color-error: red;
+  --color-filter-button: #18181f;
+
+  /* Espaçamentos */
+  --padding-header: 1.5rem 1rem;
+  --padding-main: 2rem 1rem;
+  --padding-card: 2rem;
+  --padding-card-mobile: 1rem;
+  --padding-input: 0.8rem;
+  --padding-button: 0.9rem;
+  --padding-list-card: 1.5rem;
+
+  /* Fontes */
+  --font-size-title: 2rem;
+  --font-size-title-mobile: 1.6rem;
+  --font-size-input: 1rem;
+  --font-size-button: 1rem;
+  --font-size-task-title: 1.2rem;
+  --font-size-task-date: 0.9rem;
+  --font-size-comment: 0.9rem;
+  --font-size-icon: 1.2rem;
+  --font-size-small: 0.9rem;
+
+  /* Estilo */
+  --radius-default: 12px;
+  --radius-input: 8px;
+  --radius-checkbox: 4px;
+  --gap-default: 2rem;
+  --gap-main-mobile: 1.5rem;
+  --gap-list: 1rem;
+  --gap-card-content: 0.75rem;
+  --gap-checkbox: 0.5rem;
+
+  /* Sombra */
+  --shadow-header: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --shadow-card: 0 0 10px rgba(0, 0, 0, 0.1);
+  --shadow-task-card: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  /* Transições */
+  --transition-default: 0.3s;
+  --transition-hover: 0.2s;
+}
+
+/* Tema Escuro */
+body.dark-theme {
+  --bg-color: #242424;
+  --bg-header: #1e1e2f;
+  --bg-header-border: #141427;
+  --bg-card: #2c2c3a;
+  --bg-card-completed: #2a3f2a;
+  --bg-filter-button: #2c2c3a;
+  --color-primary: #4f8cff;
+  --color-primary-hover: #366cd1;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray: #444;
+  --color-gray-dark: #aaa;
+  --color-text: #eee;
+  --color-muted: #bbb;
+  --color-error: #ff4c4c;
+  --color-filter-button: #aaa;
+
+  --shadow-header: 0 4px 8px rgba(0, 0, 0, 0.3);
+  --shadow-card: 0 0 10px rgba(0, 0, 0, 0.3);
+  --shadow-task-card: 0 4px 10px rgba(0, 0, 0, 0.3);
+}

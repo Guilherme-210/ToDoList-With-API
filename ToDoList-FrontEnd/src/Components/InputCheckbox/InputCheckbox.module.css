@@ -1,0 +1,27 @@
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: var(--gap-checkbox);
+  font-weight: bold;
+  color: var(--color-text);
+}
+
+.checkboxContainer input[type="checkbox"] {
+  appearance: none;
+  width: 1.1rem;
+  height: 1.1rem;
+  border: 2px solid var(--color-primary);
+  border-radius: var(--radius-checkbox);
+  position: relative;
+  cursor: pointer;
+}
+
+.checkboxContainer input[type="checkbox"]:checked::before {
+  content: "✔";
+  position: absolute;
+  left: 2px;
+  top: -2px;
+  color: var(--color-primary);
+  font-size: var(--font-size-input);
+}

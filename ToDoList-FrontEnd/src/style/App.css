@@ -1,0 +1,24 @@
+@import "./variables.css";
+
+
+
+/* ==== */
+/* Main */
+main {
+  padding: var(--padding-main);
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 1rem;
+    gap: var(--gap-main-mobile);
+  }
+
+  header h1 {
+    font-size: var(--font-size-title-mobile);
+  }
+}

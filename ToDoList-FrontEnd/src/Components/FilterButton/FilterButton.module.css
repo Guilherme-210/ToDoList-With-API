@@ -1,0 +1,58 @@
+@import "../../style/variables.css";
+
+.deletButton,
+.filterButton {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: var(--bg-filter-button);
+  color: var(--color-filter-button);
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filterButton:hover {
+  background-color: #ccc;
+  color: var(--color-black);
+}
+
+.deletButton:hover {
+  background-color: #ff1818;
+}
+
+.buttonAll:hover {
+  background-color: #2a8dff;
+}
+
+.buttonComplet:hover {
+  background-color: #4bff96;
+}
+
+.buttonPending:hover {
+  background-color: #ffa250;
+}
+
+.buttonAll.active {
+  background-color: #0077ff;
+  color: var(--color-black);
+}
+
+.buttonComplet.active {
+  background-color: #2ecc71;
+  color: var(--color-black);
+}
+
+.buttonPending.active {
+  background-color: #e67e22;
+  color: var(--color-black);
+}
+
+.orderTasksBtn {
+  background-color: #2a8dff;
+  border: 2px solid #2a8dff;
+}
+.orderTasksBtn:hover {
+  background-color: #5fedf7;
+}

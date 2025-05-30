@@ -1,0 +1,56 @@
+@import "../style/variables.css";
+
+.todoInput {
+  max-width: 700px;
+  width: auto;
+  margin: 2rem auto 0;
+  padding: var(--padding-card);
+  background-color: var(--bg-card);
+  border-radius: var(--radius-default);
+  box-shadow: var(--shadow-card);
+}
+
+.ContentToast {
+  position: fixed;
+  inset: 0; /* top: 0; right: 0; bottom: 0; left: 0; tudo de uma vez */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(6px); /* desfocado! */
+  background-color: rgba(0, 0, 0, 0.4); /* leve escurecida */
+  z-index: 9998; /* abaixo do toast */
+}
+
+.toast {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-primary);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  z-index: 9999;
+  opacity: 0;
+  animation: fadeInOut 3s ease-in-out forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  10% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  90% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+}
